@@ -1,0 +1,194 @@
+html{
+			font-size: 20px;
+		}
+		body{
+		    font-family: 'Lemonada', cursive;
+		    width: 100%;
+		    margin: 0;
+		}
+		iframe{
+			border: none;
+		}
+		body::-webkit-scrollbar{
+		    width:12px;
+		    border-radius: 10px;
+		}
+		body::-webkit-scrollbar-corner{
+		    background: rgba(0,0,0,0); 
+		}
+
+		body::-webkit-scrollbar-track{
+		    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5) ;
+		}
+
+		body::-webkit-scrollbar-thumb{
+		   -webkit-box-shadow:inset 0 0 6px white;
+		    border-radius: 10px;
+		}
+
+		#acc_head{
+			display:inline-block;
+			margin:none; 
+			text-shadow: 2px 2px 5px white;
+		}
+		#acc_nav_container{
+			display:inline-block;
+			width: 100%;
+		}
+		#acc_nav{
+			margin:none;
+
+		}
+
+		#acc_nav_contents li{
+			list-style-type: none;
+		}
+		#acc_nav_contents a{
+			text-decoration: none;
+			color: white;
+		}
+		a:hover{
+			text-shadow: 0px 0px 10px white;    
+		}
+		a:focus{
+			text-shadow: 0px 0px 10px white;
+		}
+		/*#acc_bg{
+			height: 500px;
+			background-image: url(fish_back.jpg);
+		    background-position: center;
+		    background-size:cover;  
+		    background-repeat: no-repeat;
+		}*/
+		#acc_logo{
+			width:10%;
+			height:200px;
+			margin:auto;
+			background-image: url(petshop_logo.jpg);
+		    background-position: center;
+		    background-size:cover;  
+		    background-repeat: no-repeat;
+		}
+		#acc_name{
+			background-color: rgba(52, 58, 64,0.5);
+			color:white;
+			text-shadow: 0px 0px 10px white;
+		}
+		button[title="Close"]{
+			display: none;
+		}
+		#pets_f{
+			display: block;
+		}
+		body > div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.no-close.ui-dialog-buttons.ui-draggable.ui-resizable{
+			background-color:rgba(105,105,105,0.5);
+			font-size:0.6rem;
+			border-radius: 10px;	
+			box-shadow: 0px 0px 10px white;
+			font-weight:600;
+		}
+		#dialog label,#acc_set_form label{
+			margin-left:5%;
+			margin-right:5%; 
+		}
+
+		#weight{
+			width:30%;
+		}
+		#pet_pic{
+			width:90%;	
+		}
+		button.ui-button.ui-corner-all.ui-widget{
+			border-radius: 8px;
+		    border: none;
+		    margin:10px;
+		    outline: none;
+		    box-shadow: 2px 2px rgba(105,105,105,0.4);
+		}
+		#dialog input,#acc_set_form input{
+		    background-color: rgba(255,255,255,0.6);
+		    border-radius: 8px;
+		    border: none;
+		    margin-top:10px;
+		    margin-bottom: 10px;
+		    outline: none;
+		    box-shadow: 2px 2px rgba(105,105,105,0.4);
+		}
+
+		button.ui-button.ui-corner-all.ui-widget:focus,#dialog input:focus,#acc_set_form input:focus,button.ui-button.ui-corner-all.ui-widget:hover,#dialog input:hover,#acc_set_form input:hover {
+			box-shadow: 0px 0px 10px white;
+		}
+
+	input[type='radio']{
+			box-shadow: none;
+			visibility: hidden;
+		}
+	input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: rgb(52, 58, 64);
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    #add_pet:hover,#add_pet:focus,#down_pets:hover,#down_pets:focus,#ok_acc_button:hover,#ok_acc_button:focus{
+    	box-shadow: 0px 0px 10px white;
+    	border-radius: 10px;
+    }
+    #pets_info{
+          width: 70%;
+    }
+    #pets_info img{
+    	width: 100%;
+    	height:300px;
+    	object-fit: cover;
+    }
+
+    #pets_info button:hover,#pets_info button:focus{
+    	box-shadow: 0px 0px 10px white;
+    	outline:none;
+    }
+    #pets_info button{
+    	border:none;
+    	box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    }
+
+    #pets_info div.row{
+    	background-color: rgba(255,255,255,0.3);
+    	border-radius: 10px;
+    	box-shadow: 0px 0px 10px white;
+    }
+
+/*-------------------------------------------------*/
+
+
+
+/*#acc_set_form input{
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    border: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: 2px 2px rgba(105,105,105,0.4);
+}*/

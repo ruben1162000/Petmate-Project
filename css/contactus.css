@@ -1,0 +1,75 @@
+label{
+    font-weight: bold;
+    display: block;
+    width: auto;
+}
+label[for=contact1],label[for=contact2]{
+    display: inline-block; 
+}
+label[for=contact1]:hover,label[for=contact2]:hover{
+    text-shadow: 0px 0px 10px white;
+    cursor: pointer;
+}
+input[type=checkbox]:focus{
+    box-shadow: none;
+}
+input[type=checkbox]{
+    box-shadow: none;
+    display: none;
+}
+.no-close .ui-dialog-titlebar-close{
+    display:none;
+}
+
+#dialog{
+    display: none;
+    color: #e74c3c;
+    font-weight: 600; 
+}
+
+div.ui-dialog{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px white;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.radiostyle{
+    padding: 0 0 0 0;
+    transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    -moz-transition:all 0.2s ease-in-out;
+    -o-transition:all 0.2s ease-in-out;
+}
+.pawstyle{
+    color:white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px white;
+}
+
+textarea{
+    font-size: 15px;
+    font-family: 'Lemonada', cursive;
+    background-color: rgba(255,255,255,0.6);
+    border-radius: 8px;
+    height: auto;
+    width:100%;
+    border: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+    outline: none;
+    box-shadow: 2px 2px rgba(105,105,105,0.4);
+    resize: none;
+}
+
+textarea:focus,input:focus{
+    box-shadow: 0px 0px 10px white;
+}
+
+p.reqmail{
+   color: #e74c3c;
+   font-weight:600; 
+}
+
+#opener{
+    display: block;
+}

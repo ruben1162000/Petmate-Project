@@ -1,0 +1,101 @@
+body{
+    font-size: 20px;
+    font-family: 'Lemonada', cursive;
+    color: rgba(35,35,35,0.9);
+    width: 100%;
+    margin: 0;
+    background-image: url(/imgs/dogs.jpg);
+    background-position: center;
+    background-size:cover;  
+    background-repeat: no-repeat;
+    text-shadow: 2px 2px rgba(105,105,105,0.4);
+    transition:background 2s ease-in-out;
+    -webkit-transition:background 2s ease-in-out;
+    -moz-transition:background 2s ease-in-out;
+    -o-transition:background 2s ease-in-out;
+}
+
+body::-webkit-scrollbar,textarea::-webkit-scrollbar,ul::-webkit-scrollbar{
+    width:12px;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-corner,textarea::-webkit-scrollbar-corner,ul::-webkit-scrollbar-corner{
+    background: rgba(0,0,0,0); 
+}
+
+body::-webkit-scrollbar-track{
+    -webkit-box-shadow:inset 0 0 6px rgba(105,105,105,0.6);
+}
+
+body::-webkit-scrollbar-thumb{
+   -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.8);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-track,ul::-webkit-scrollbar-track{
+    -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0);
+    border-radius: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb,ul::-webkit-scrollbar-thumb{
+   -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+a:hover{
+text-shadow: 0px 0px 10px white;    
+}
+a:focus{
+text-shadow: 0px 0px 10px white;
+}
+nav{
+    background-color: rgba(105,105,105,0.35);
+    margin:0;
+}
+
+ul:nth-of-type(1){
+    display: flex;
+    list-style-type: none;
+    padding-top:0;
+    padding-bottom: 0;
+    padding-left: 30px;
+    margin: 0 0 0 20px;
+    width:50%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+ul:nth-of-type(2),ul:nth-of-type(3){
+    list-style-type: none;
+    display: none;
+}
+
+#brand,#brand2{
+    font-size: 25px;
+}
+
+
+@media only screen and (min-width: 880px){
+        ul:nth-of-type(2),ul:nth-of-type(3){
+        display:none !important;
+    }
+}
+@media only screen and (max-width: 880px){
+    ul:nth-of-type(1){
+        display: none;
+    }
+    ul:nth-of-type(2){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 0 20px;
+        list-style-type: none;
+    }
+    ul:nth-of-type(3){
+        list-style-type:none;
+    }
+}
