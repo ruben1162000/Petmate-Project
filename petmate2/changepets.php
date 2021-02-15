@@ -7,17 +7,16 @@ if(!isset($_SESSION['accid'])){
 $acc_id = $_SESSION['accid'];
 function compress_png($source,$min_quality=60,$max_quality = 75)
 {
-    $compressed_png_content = shell_exec("D:\\app_programs\\pngquant\\pngquant --quality=$min_quality-$max_quality - < ".$source." > D:\\wamp64\\www\\test\\uploads\\temporary.png");
-    return base64_encode(file_get_contents("D:/wamp64/www/test/uploads/temporary.png"));
+    $compressed_png_content = shell_exec("path\\to\\pngquant --quality=$min_quality-$max_quality - < ".$source." > path\\to\\temp\\uploads\\temporary.png");
+    return base64_encode(file_get_contents("path/to/temp/uploads/temporary.png"));
 }
 function compress_jpeg($source,$quality=75)
 {
-    $compressed_jpeg_content = shell_exec("D:\\app_programs\\mozjpeg\\cjpeg -quality $quality ".$source." > D:\\wamp64\\www\\test\\uploads\\temporary.jpg");
-    return base64_encode(file_get_contents("D:/wamp64/www/test/uploads/temporary.jpg"));
+    $compressed_jpeg_content = shell_exec("path\\to\\mozjpeg\\cjpeg -quality $quality ".$source." > path\\to\\temp\\uploads\\temporary.jpg");
+    return base64_encode(file_get_contents("path/to/temp/uploads/temporary.jpg"));
 }
 print_r($_POST);
 echo "<script type='text/javascript'>console.log('{$_POST['posted_on']}')</script>\n";
-// if(isset($_POST["posted_on"])){
 	if($_POST["posted_on"]==0){
 		echo "<script type='text/javascript'>alert('you are inserting a pet')</script>\n";
 		$var=$_FILES['pet_pic'];
